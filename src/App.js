@@ -8,9 +8,9 @@ import Navbar from './components/Navbar';
 
 //sayfalar
 import anasayfa from './pages/anasayfa';
-import Raporlar from './components/Raporlar';
-import Istatislikler from './components/Istatislikler';
-import Ayarlar from './components/Ayarlar';
+import Raporlar from './pages/Raporlar';
+import Istatislikler from './pages/Istatislikler';
+import Ayarlar from './pages/Ayarlar';
 import giris from './pages/giris';
 import uyeol from './pages/uyeol';
 

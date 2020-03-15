@@ -15,7 +15,7 @@ import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider'
 import Button from '@material-ui/core/Button';
-
+import Grid from '@material-ui/core/Grid';
 
 //icons
 import ReportIcon from '@material-ui/icons/Report';
@@ -47,7 +47,7 @@ class Navbar extends Component {
     render() {
         const { classes } = this.props;
         return (
-            <div>
+            <Grid container>
                 <AppBar position="fixed">
                     <Toolbar>
                         <Typography variant="h6" noWrap className={classes.header}>
@@ -99,7 +99,7 @@ class Navbar extends Component {
                         </ListItem>
                     </List>
                 </Drawer>
-            </div>
+            </Grid>
         )
     }
 }
