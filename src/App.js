@@ -8,8 +8,11 @@ import Navbar from './components/Navbar';
 
 //sayfalar
 import anasayfa from './pages/anasayfa';
-import giris from './pages/anasayfa';
-import uyeol from './pages/anasayfa';
+import Raporlar from './components/Raporlar';
+import Istatislikler from './components/Istatislikler';
+import Ayarlar from './components/Ayarlar';
+import giris from './pages/giris';
+import uyeol from './pages/uyeol';
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
           <Navbar />
           <Switch>
             <Route exact path="/" component={anasayfa} />
+            <Route exact path="/raporlar" component={Raporlar} />
+            <Route exact path="/istatislikler" component={Istatislikler} />
+            <Route exact path="/ayarlar" component={Ayarlar} />
             <Route exact path="/giris" component={giris} />
             <Route exact path="/uyeol" component={uyeol} />
           </Switch>

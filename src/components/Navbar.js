@@ -8,9 +8,20 @@ import withStyles from '@material-ui/core/styles/withStyles';
 import AppBar from '@material-ui/core/AppBar';
 import Drawer from '@material-ui/core/Drawer';
 import Toolbar from '@material-ui/core/Toolbar';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
+import Divider from '@material-ui/core/Divider'
+import Button from '@material-ui/core/Button';
 
+
+//icons
+import ReportIcon from '@material-ui/icons/Report';
+import EqualizerIcon from '@material-ui/icons/Equalizer';
+import SettingsIcon from '@material-ui/icons/Settings';
+import LockIcon from '@material-ui/icons/Lock';
 
 const drawerWidth = 240;
 
@@ -26,6 +37,9 @@ const styles = {
     header: {
         marginLeft: "15%"
     },
+    sideBox: {
+        margin: "25%"
+    }
 };
 
 
@@ -49,7 +63,41 @@ class Navbar extends Component {
                         paper: classes.drawerPaper,
                     }}
                 >
-                    <h1>hello</h1>
+                    <List component="nav" aria-label="mailbox folders">
+                        <Button color="inherit" component={Link} to="/raporlar">
+                            <ListItem>
+                                <ListItemIcon>
+                                    <ReportIcon />
+                                </ListItemIcon>
+                                <ListItemText primary="Raporlar" />
+                            </ListItem>
+                        </Button>
+                        <Divider />
+                        <Button color="inherit" component={Link} to="/istatislikler">
+                            <ListItem >
+                                <ListItemIcon>
+                                    <EqualizerIcon />
+                                </ListItemIcon>
+                                <ListItemText primary="İstatislikler" />
+                            </ListItem>
+                        </Button>
+                        <Divider />
+                        <Button color="inherit" component={Link} to="/ayarlar">
+                            <ListItem >
+                                <ListItemIcon>
+                                    <SettingsIcon />
+                                </ListItemIcon>
+                                <ListItemText primary="Ayarlar" />
+                            </ListItem>
+                        </Button>
+                        <Divider light />
+                        <ListItem button>
+                            <ListItemIcon>
+                                <LockIcon />
+                            </ListItemIcon>
+                            <ListItemText primary="Çıkış" />
+                        </ListItem>
+                    </List>
                 </Drawer>
             </div>
         )
