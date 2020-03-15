@@ -1,24 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
+//yonlendirme için reactrouterdom componentini kullanıyoruz
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
+
+//components
+import Navbar from './components/Navbar';
+
+//sayfalar
+import anasayfa from './pages/anasayfa';
+import giris from './pages/anasayfa';
+import uyeol from './pages/anasayfa';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <div className="container">
+          <Navbar />
+          <Switch>
+            <Route exact path="/" component={anasayfa} />
+            <Route exact path="/giris" component={giris} />
+            <Route exact path="/uyeol" component={uyeol} />
+          </Switch>
+        </div>
+      </Router>
     </div>
   );
 }
