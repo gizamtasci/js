@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import HeaderImage from '../../img/header.png';
 
 //material ui işlevleri
 import Button from '@material-ui/core/Button';
@@ -11,7 +12,6 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import List from '@material-ui/core/List';
-import Typography from '@material-ui/core/Typography';
 import Divider from '@material-ui/core/Divider';
 import IconButton from '@material-ui/core/IconButton';
 import ListItem from '@material-ui/core/ListItem';
@@ -39,6 +39,7 @@ const useStyles = makeStyles(theme => ({
             easing: theme.transitions.easing.sharp,
             duration: theme.transitions.duration.leavingScreen,
         }),
+        backgroundColor: "#c5c6c6"
     },
     appBarShift: {
         width: `calc(100% - ${drawerWidth}px)`,
@@ -121,9 +122,10 @@ export default function Navbar() {
                     >
                         <MenuIcon />
                     </IconButton>
-                    <Typography variant="h6" noWrap>
+                    {/* <Typography variant="h6" noWrap>
                         RAPORLAR - ISTATISLIKLER
-                    </Typography>
+                    </Typography> */}
+                    <img src={HeaderImage} alt="header"/>
                 </Toolbar>
             </AppBar>
             <Drawer

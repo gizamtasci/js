@@ -1,13 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
+import FooterImage from '../../img/footer.png';
 
 //material ui işlevleri
 import { withStyles } from "@material-ui/core/styles";
-import Typography from "@material-ui/core/Typography";
-import Paper from "@material-ui/core/Paper";
-import Grid from "@material-ui/core/Grid";
-import AppBar from "@material-ui/core/AppBar";
-import Toolbar from "@material-ui/core/Toolbar";
 
 
 
@@ -21,7 +17,7 @@ const styles = {
     left: 0,
     bottom: 0,
     width: "100%",
-    backgroundColor: "#000"
+    backgroundColor: "#c5c6c6"
   }
 };
 
@@ -30,21 +26,9 @@ class Footer extends React.Component {
     const { classes } = this.props;
 
     return (
-      <Paper className={classes.footer}>
-        <Grid container spacing={1}>
-          <AppBar position="static">
-            <Toolbar variant="dense">
-              <Typography
-                variant="caption"
-                color="inherit"
-                className={classes.flex}
-              >
-                © Copyright 2020
-              </Typography>
-            </Toolbar>
-          </AppBar>
-        </Grid>
-      </Paper>
+      <div className={classes.footer}>
+       <img src={FooterImage} alt="footer footer"/>
+      </div>
     );
   }
 }
