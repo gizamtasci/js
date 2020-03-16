@@ -5,7 +5,6 @@ class anasayfa extends Component {
         return (
             <div>
                 <h1>Merhaba, Hoşgeldiniz!</h1>
-                
             </div>
         )
     }

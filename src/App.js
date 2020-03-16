@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 
 //components
-import Navbar from './components/Navbar';
+import Navbar from './components/Layout/Navbar';
+import Footer from './components/Layout/Footer';
 
 //sayfalar
 import anasayfa from './pages/anasayfa';
@@ -20,6 +21,7 @@ function App() {
       <Router>
         <div className="container">
           <Navbar />
+          <Footer />
           <Switch>
             <Route exact path="/" component={anasayfa} />
             <Route exact path="/raporlar" component={Raporlar} />

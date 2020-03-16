@@ -1,15 +1,18 @@
 import React, { Component } from 'react'
 //uygulamayı daha iyi kontrol etmek için tip kontrolu(proptypes) componentini kullanıyoruz
 import PropTypes from 'prop-types';
-import RaporlarHeader from '../components/RaporlarHeader';
+// import RaporlarHeader from '../components/RaporlarHeader';
 
 //material ui işlevleri
 import withStyles from '@material-ui/core/styles/withStyles';
-import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
 
 const styles = {
-    raporlar: {
-        margin: "auto",
+    paper: {
+        width:"100%",
+        padding: "3%",
+        paddingBottom: "0%",
+        marginBottom: "11%"
     }
 };
 
@@ -19,12 +22,14 @@ class Raporlar extends Component {
     render() {
         const { classes } = this.props;
         return (
-            <Grid container spacing={3}>
-                <div className={classes.raporlar}>
-                    <RaporlarHeader />
-                    <h1>Raporlar</h1>
-                </div>
-            </Grid>
+            <div>
+                <Paper elevation={3} className={classes.paper}>
+                    <h1>TEST</h1>
+                    <h1>TEST</h1>
+                    <h1>TEST</h1>
+                    <h1>TEST</h1>
+                </Paper>
+            </div>
         )
     }
 }

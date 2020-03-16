@@ -3,12 +3,15 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types';
 //material ui işlevleri
 import withStyles from '@material-ui/core/styles/withStyles';
+import Paper from '@material-ui/core/Paper';
 
 
 const styles = {
-    root: {
-        margin: "15%",
-        maxWidth: 1200
+    paper: {
+        width:"100%",
+        padding: "3%",
+        paddingBottom: "0%",
+        marginBottom: "11%"
     }
 };
 
@@ -18,8 +21,13 @@ class Ayarlar extends Component {
     render() {
         const { classes} = this.props;
         return (
-            <div className={classes.root}>
-                <h1>Ayarlar</h1>
+            <div>
+                <Paper elevation={3} className={classes.paper}>
+                    <h1>TEST</h1>
+                    <h1>TEST</h1>
+                    <h1>TEST</h1>
+                    <h1>TEST</h1>
+                </Paper>
             </div>
         )
     }
