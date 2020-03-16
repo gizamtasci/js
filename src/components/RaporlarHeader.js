@@ -14,9 +14,6 @@ import AccessibilityIcon from '@material-ui/icons/Accessibility';
 import FolderIcon from '@material-ui/icons/Folder';
 
 const useStyles = makeStyles({
-    root: {
-        width: 500,
-    },
     paper: {
         width:"100%",
         padding: "3%"
@@ -33,7 +30,7 @@ export default function LabelBottomNavigation() {
 
     return (
         <Paper elevation={3} className={classes.paper}>
-        <BottomNavigation value={value} onChange={handleChange} className={classes.root}>
+        <BottomNavigation value={value} onChange={handleChange}>
             <BottomNavigationAction label="Hemşire Çağır" value="hemsirecagir" icon={<LocalHospitalIcon />} />
             <BottomNavigationAction label="Beyaz Kod" value="beyazkod" icon={<AcUnitIcon />} />
             <BottomNavigationAction label="Mavi Kod" value="mavikod" icon={<FavoriteIcon />} />

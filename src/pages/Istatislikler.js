@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import StatisticHeader from '../components/StatisticHeader';
 //uygulamayı daha iyi kontrol etmek için tip kontrolu(proptypes) componentini kullanıyoruz
 import PropTypes from 'prop-types';
 //material ui işlevleri
@@ -22,6 +23,7 @@ class Istatislikler extends Component {
         const { classes } = this.props;
         return (
             <div>
+                <StatisticHeader/>
                 <Paper elevation={3} className={classes.paper}>
                     <h1>TEST</h1>
                     <h1>TEST</h1>
