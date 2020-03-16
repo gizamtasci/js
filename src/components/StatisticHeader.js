@@ -1,4 +1,6 @@
 import React from 'react';
+
+//material ui işevleri
 import { makeStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
@@ -11,8 +13,9 @@ import QueryBuilderIcon from '@material-ui/icons/QueryBuilder';
 
 const useStyles = makeStyles({
     paper: {
-        width:"100%",
-        padding: "3%"
+        width:"29%",
+        padding: "1%",
+        marginBottom: "1%"
     }
 });
 

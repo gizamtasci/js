@@ -16,13 +16,11 @@ const styles = {
     flexGrow: 1
   },
   footer: {
-    padding: 5,
-    position: "absolute",
+    position: "fixed",
     textAlign: "center",
     left: 0,
     bottom: 0,
-    right: 0,
-
+    width: "100%",
     backgroundColor: "#000"
   }
 };

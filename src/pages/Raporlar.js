@@ -13,7 +13,7 @@ const styles = {
     paper: {
         width: "100%",
         padding: "3%",
-        paddingBottom: "0%",
+        paddingBottom: "auto",
         marginBottom: "11%"
     },
     fieldPaper: {

@@ -83,7 +83,7 @@ const useStyles = makeStyles(theme => ({
             duration: theme.transitions.duration.enteringScreen,
         }),
         marginLeft: 0,
-    },
+    }
 }));
 
 export default function Navbar() {
@@ -182,7 +182,7 @@ export default function Navbar() {
                     [classes.contentShift]: open,
                 })}
             >
-            <div className={classes.drawerHeader} />
+                <div className={classes.drawerHeader} />
 
             </main>
         </div>
